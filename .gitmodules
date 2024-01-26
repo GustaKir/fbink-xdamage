@@ -1,3 +1,4 @@
 [submodule "FBInk"]
 	path = FBInk
+        branch = v1.25.0
 	url = https://github.com/NiLuJe/FBInk/
