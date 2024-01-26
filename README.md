@@ -5,7 +5,7 @@ A xclient that listens for xdamage events and refreshes EPD using FBInk
 1. Clone repository including submodules on a Kindle: 
 
 ```
-git clone --recurse-submodules https://github.com/schuhumi/fbink-xdamage
+git clone --recurse-submodules https://github.com/marco-andrea/fbink-xdamage
 ```
 
 2. Satisfy dependencies, those are (on Alpine Linux):
@@ -13,7 +13,6 @@ git clone --recurse-submodules https://github.com/schuhumi/fbink-xdamage
  - xorg-server-dev
  - libx11-dev
  - libxdamage-dev
- - libxfixes-dev
  - probably some more, I'll fix this list once I compile on a fresh Alpine container
 
 3. Build on the Kindle:
