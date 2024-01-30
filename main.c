@@ -173,7 +173,9 @@ int main(int argc, char *argv[])
                 printf ("Accumulated rectangle %d %d %d %d\n", square.x, square.y, square.width, square.height);
                 square = rectsMerge(square, area);   
             }   
-        }	    
+        } else {
+	    usleep(1000);
+	}
     }
     XCloseDisplay(display);
         
