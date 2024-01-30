@@ -174,7 +174,7 @@ int main(int argc, char *argv[])
                 square = rectsMerge(square, area);   
             }   
         } else {
-	    usleep(1000);
+	    usleep(10000);
 	}
     }
     XCloseDisplay(display);
