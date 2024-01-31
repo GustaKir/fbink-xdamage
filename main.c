@@ -116,7 +116,8 @@ int main(int argc, char *argv[])
     square.x = square.y = square.width = square.height = 0;	
     fbink_refresh(fbfd, 0,0,0,0, &fbink_cfg);
     clock_gettime(CLOCK_REALTIME, &firstRefresh);
-	
+
+    // accumulate rectangles and throttle refresh updates every 50ms or lock waiting in XPending
     while (1)
     {  
         // if the first refresh event timestamp was more than 50ms ago AND there is a rectangle  
